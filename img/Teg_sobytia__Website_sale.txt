@@ -1,0 +1,7 @@
+<!-- Event snippet for Website sale conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-647938872/9N52CPSs9s0BELiG-7QC',
+      'transaction_id': ''
+  });
+</script>

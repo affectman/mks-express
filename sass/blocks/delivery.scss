@@ -1,0 +1,174 @@
+.delivery {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: $white;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.delivery__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.delivery__hamburger {
+  flex-basis: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 11.3%;
+
+  span {
+    display: block;
+    background-color: $primary;
+    height: 2px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 4px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      width: 75%;
+      margin-left: auto;
+    }
+
+  }
+
+}
+.logo-yellow {
+  padding-left: 10px;
+  height: 70px;
+  width: 200px;
+  float: left;
+  margin: 5px 0;
+}
+.delivery__repair, .delivery__map {
+  background: url("../../img/logo.png") left center no-repeat;
+  background-size: 130px;
+  padding: 40px 200px 24px 0px;
+
+  p {
+    margin: 0;
+    padding-left: 15px;
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(21px);
+  }
+
+  span {
+    display: block;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+  }
+
+}
+
+.delivery__phone {
+  margin-left: auto;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $white;
+  }
+
+  img {
+    display: block;
+  }
+
+  span {
+    display: none;
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(28px);
+  }
+
+}
+
+.delivery__map {
+  //background-image: url("../../img/map.png");
+  display: none;
+}
+
+.delivery__btn {
+  @include btn {
+    display: none;
+    margin-left: 24px;
+    max-width: 164px;
+  }
+}
+
+.delivery__callback {
+  display: none;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  margin-left: 24px;
+}
+
+@media (min-width: 480px) {
+
+  .delivery__hamburger {
+    margin-right: 5%;
+  }
+
+  .delivery__repair {
+    margin-right: 7%;
+  }
+
+  .delivery__map {
+    display: block;
+  }
+
+}
+
+@media (min-width: 680px) {
+
+  .delivery__phone {
+
+    img {
+      display: none;
+    }
+
+    span {
+      display: block;
+    }
+
+  }
+
+}
+
+@media (min-width: 880px) {
+  .logo-yellow {
+    padding-left: 100px;
+  }
+  .delivery__btn {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .logo-yellow {
+    padding-left: 100px;
+  }
+  .delivery__callback {
+    display: block;
+  }
+
+  .delivery__hamburger {
+    position: relative;
+
+    &::after {
+      content: "Меню";
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(16px);
+      position: absolute;
+      right: -45px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}

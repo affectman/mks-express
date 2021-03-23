@@ -1,0 +1,11 @@
+
+onclick="ym(62140414,'reachGoal','Отправить'); return true;" - Событие на кнопку отправки формы (повесить на кнопку отправить)
+onclick="ym(62140414,'reachGoal','Звонок'); return true;" - Событие на ссылку номера телефона (повесить на номер телефона)
+onclick="ym(62140414,'reachGoal','Почта'); return true;" - Событие на ссылку почты (повесить на ссылку почты)
+
+Пример: 
+
+<form action="">
+    ...
+    <input type="button" onclick="ym(62140414,'reachGoal','Отправить'); return true;" value="Отправить" />
+</form>
